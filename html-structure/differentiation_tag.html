@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab.HTML</title>
+    <style>
+        body {
+            margin-right: 40px;
+            margin-left: 40px;
+        }
+
+        table,
+        tr,
+        td,
+        th {
+            border-collapse: collapse;
+            border-spacing: 0px;
+            border: 2px solid rgb(129, 128, 128);
+        }
+
+        th {
+            text-align: center;
+            padding-top: 4px;
+            padding-bottom: 4px;
+        }
+
+        #tag {
+            text-align: center;
+            padding-left: 4px;
+            padding-right: 4px;
+        }
+
+        td {
+            padding-left: 15px;
+            padding-right: 5px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+        }
+
+        p {
+            font-size: large
+        }
+    </style>
+</head>
+
+<body>
+    <H1>HTML structure &#9749;</H1>
+    <p>2. ให้หาความเหมือนและความแตกต่างระหว่าง 2 tag ที่กำหนดให้<br>
+        &#60;hr&#62;&#38;&#60;br&#62; , &#60;ul&#62;&#38;&#60;ol&#62; ,
+        &#60;select&#62;&#38;&#60;checkbox&#62;&#38;&#60;redio button&#62; ,
+        &#60;div&#62;&#38;&#60;span&#62; ,
+        &#60;script&#62;&#38;&#60;style&#62;<br>
+    </p>
+    <div>
+        <H2>Differentiation Tag</H2>
+        <table>
+            <tr>
+                <th>Tag</th>
+                <th>เหมือนกัน</th>
+                <th>ต่างกัน</th>
+            </tr>
+            <tr>
+                <td id="tag">&#60;hr&#62;&#38;&#60;br&#62;</td>
+                <td>ใช้สำหรับขึ้นบรรทัดใหม่</td>
+                <td>
+                    &#60;br&#62;จะเป็นการขึ้นบรรทัดใหม่โดยไม่มีเส้นคั่นหน้า<br>
+                    &#60;hr&#62;จะเป็นการขึ้นบรรทัดใหม่และมีเส้นคั่นหน้าด้วย<br>
+                </td>
+            </tr>
+            <tr>
+                <td id="tag">&#60;ul&#62;&#38;&#60;ol&#62;</td>
+                <td>ใช้สำหรับสร้างรายการเรียงลำดับ</td>
+                <td>
+                    &#60;ul&#62;เป็นรายการเรียงลำดับ โดยใช้สัญลักษณ์อยู่หน้ารายการ<br>
+                    &#60;ol&#62;เป็นรายการเรียงลำดับ โดยใช้ตัวเลขหรือตัวอักษรอยู่หน้ารายการ<br>
+                </td>
+            </tr>
+            <tr>
+                <td id="tag">&#60;select&#62;&#38;&#60;checkbox&#62;&#38;&#60;radio button&#62;</td>
+                <td>ใช้สำหรับสร้างรายการตัวเลือก</td>
+                <td>
+                    &#60;select&#62; คือรายการตัวเลือกแบบ drop-down<br>
+                    &#60;checkbox&#62; คือรายการตัวเลือกแบบ มีช่องสี่เหลี่ยมให้เลือก สามารถเลือกได้หลายรายการ<br>
+                    &#60;radio button&#62; คือรายการตัวเลือกแบบ มีช่องวงกลมให้เลือก เลือกได้หนึ่งรายการ<br>
+                </td>
+            </tr>
+            <tr>
+                <td id="tag">&#60;div&#62;&#38;&#60;span&#62;</td>
+                <td>ใช้กำหนดส่วน หรือแบ่งส่วนเอกสาร HTML</td>
+                <td>
+                    &#60;div&#62; ใช้กำหนดส่วน หรือแบ่งส่วนเอกสารขนาดใหญ่กว่า<br>
+                    &#60;span&#62; ใช้กำหนดส่วน หรือแบ่งส่วนเอกสารที่เป็นส่วนย่อยอยู่ภายใน<br>
+                </td>
+            </tr>
+            <tr>
+                <td id="tag">&#60;script&#62;&#38;&#60;style&#62;</td>
+                <td>ใช้เพิ่มองค์ประกอบคำสั่งจากภายนอก เพื่อเข้ามาจัดการในเอกสาร HTML</td>
+                <td>
+                    &#60;script&#62; ใช้เพิ่มองค์ประกอบคำสั่งด้วย javascript <br>
+                    &#60;style&#62; ใช้เพิ่มองค์ประกอบคำสั่งด้วย CSS <br>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <br>
+    w3schools Ref. <a href="https://www.w3schools.com/tags/default.asp" target="_blank">HTML Element Reference</a> ,
+    <a href="https://www.w3schools.com/tags/ref_attributes.asp" target="_blank">HTML Attributes</a> ,
+    <a href="https://www.w3schools.com/tags/ref_standardattributes.asp" target="_blank">Global Attributes</a> ,
+    <a href="https://www.w3schools.com/tags/ref_eventattributes.asp" target="_blank">Event Attributes</a>
+    <br>
+    <br>
+</body>
+
+</html>
