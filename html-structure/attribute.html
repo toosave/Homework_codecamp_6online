@@ -17,7 +17,7 @@
         th {
             border-collapse: collapse;
             border-spacing: 0px;
-            border: 2px solid rgb(129, 128, 128);
+            border: 1px solid rgb(129, 128, 128);
         }
 
         th {
@@ -57,139 +57,278 @@
             <tr>
                 <th>Tag</th>
                 <th>Attribute</th>
+                <th>การใช้งาน</th>
             </tr>
             <tr>
                 <td id="tag">
                     <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements"
                         target="_blank">&#60;h&#62;</a>
                 </td>
-                <td>align จัดตำแหน่ง left, center, right </td>
+                <td>align </td>
+                <td>จัดตำแหน่ง left, center, right </td>
             </tr>
             <tr>
                 <td id="tag">
                     <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p"
                         target="_blank">&#60;p&#62;</a>
                 </td>
-                <td>align จัดตำแหน่ง left, center, right </td>
+                <td>align </td>
+                <td>จัดตำแหน่ง left, center, right </td>
             </tr>
             <tr>
                 <td id="tag">
                     <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div"
                         target="_blank">&#60;div&#62;</a>
                 </td>
-                <td>align จัดตำแหน่ง left, center, right </td>
+                <td>align </td>
+                <td>จัดตำแหน่ง left, center, right </td>
             </tr>
             <tr>
-                <td id="tag">
-                    <a href="https://www.w3schools.com/tags/tag_img.asp"
-                        target="_blank">&#60;img&#62;</a>
+                <td id="tag" rowspan="11">
+                    <a href="https://www.w3schools.com/tags/tag_img.asp" target="_blank">&#60;img&#62;</a>
                 </td>
+                <td>alt</td>
+                <td>ระบุข้อความสำรองสำหรับรูปภาพ</td>
+            </tr>
+            <tr>
+                <td>crossorigin</td>
+                <td>อนุญาตให้ใช้รูปภาพจากไซต์ของบุคคลที่สามที่อนุญาตให้ใช้ cross-origin ใช้กับ Canvas</td>
+            </tr>
+            <tr>
+                <td>height</td>
+                <td>ระบุความสูงของรูปภาพ</td>
+            </tr>
+            <tr>
+                <td>ismap</td>
+                <td>ระบุรูปภาพ เป็นรูปภาพฝั่งเซิร์ฟเวอร์</td>
+            </tr>
+            <tr>
+                <td>longdesc</td>
+                <td>ระบุ URL โดยละเอียดของรูปภาพในคำอธิบาย</td>
+            </tr>
+            <tr>
+                <td>referrerpolicy</td>
+                <td>ระบุผู้อ้างอิงที่จะใช้เวลาดึงภาพ</td>
+            </tr>
+            <tr>
+                <td>sizes</td>
+                <td>กำหนดขนาดของรูปภาพสำหรับ page layout</td>
+            </tr>
+            <tr>
+                <td>src</td>
+                <td>ระบุ path ไปยังรูปภาพ</td>
+            </tr>
+            <tr>
+                <td>srcset</td>
+                <td>แสดง URL ของรูปภาพนั้นๆเพื่อนำไปใช้ในจุดประสงค์ต่างๆ</td>
+            </tr>
+            <tr>
+                <td>usemap</td>
+                <td>ระบุชื่อmapในรูปภาพที่มี link ซ่อนอยู่ และมีการกำหนดขนาด map ภายใน ด้วย tag map และ tag area </td>
+            </tr>
+            <tr>
+                <td>width</td>
+                <td>ระบุความกว้างของรูปภาพ</td>
+            </tr>
+            <tr>
+                <td id="tag" rowspan="9">
+                    <a href="https://www.w3schools.com/tags/tag_a.asp" target="_blank">&#60;a&#62;</a>
+                </td>
+                <td>download</td>
+                <td>ระบุว่าเป้าหมายจะถูกดาวน์โหลด เมื่อผู้ใช้คลิกที่ hyperlink</td>
+            </tr>
+            <tr>
+                <td>href</td>
+                <td>ระบุ URL ของหน้าที่ลิงก์ที่จะไป</td>
+            </tr>
+            <tr>
+                <td>hreflang</td>
+                <td>ระบุภาษาของเอกสารใน link</td>
+            </tr>
+            <tr>
+                <td>media</td>
+                <td>ระบุสื่อหรืออุปกรณ์ ที่ลิงค์ไว้กับเอกสาร</td>
+            </tr>
+            <tr>
+                <td>ping</td>
+                <td>ระบุ link แจ้งเตือนใน ping เพื่อใช้แจ้งให้เจ้าของเว็บไซต์ทราบหากมีการคลิกลิงค์</td>
+            </tr>
+            <tr>
+                <td>referrerpolicy</td>
+                <td>ระบุผู้อ้างอิงที่จะส่ง</td>
+            </tr>
+            <tr>
+                <td>rel</td>
+                <td>ระบุความสัมพันธ์ระหว่างเอกสารปัจจุบันและเอกสารใน link</td>
+            </tr>
+            <tr>
+                <td>target</td>
+                <td>ระบุตำแหน่งที่จะเปิดเอกสารใน link</td>
+            </tr>
+            <tr>
+                <td>type</td>
                 <td>
-                    alt ระบุข้อความสำรองสำหรับรูปภาพ <br>
-                    crossorigin อนุญาตให้ใช้รูปภาพจากไซต์ของบุคคลที่สามที่อนุญาตให้ใช้ cross-origin ในการใช้ Canvas <br>
-                    height ระบุความสูงของรูปภาพ <br>
-                    ismap ระบุรูปภาพ เป็นรูปภาพฝั่งเซิร์ฟเวอร์ <br>
-                    longdesc ระบุ URL โดยละเอียดของรูปภาพในคำอธิบาย<br>
-                    referrerpolicy ระบุผู้อ้างอิงที่จะใช้เวลาดึงภาพ <br>
-                    sizes กำหนดขนาดของรูปภาพสำหรับ page layout <br>
-                    src ระบุ path ไปยังรูปภาพ<br>
-                    srcset แสดง URL ของรูปภาพนั้นๆเพื่อนำไปใช้ในจุดประสงค์ต่างๆ <br>
-                    usemap ระบุรูปภาพเป็นรูป client-side <br>
-                    width ระบุความกว้างของรูปภาพ <br>
+                    ระบุประเภท
+                    <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" 
+                        target="_blank">media type</a>
+                    ของเอกสารใน link
                 </td>
             </tr>
             <tr>
-                <td id="tag">
-                    <a href="https://www.w3schools.com/tags/tag_a.asp"
-                        target="_blank">&#60;a&#62;</a>
-                </td>
-                <td>
-                    download ระบุว่าเป้าหมายจะถูกดาวน์โหลด เมื่อผู้ใช้คลิกที่ hyperlink <br>
-                    href ระบุ URL ของหน้าที่ลิงก์ที่จะไป <br>
-                    hreflang ระบุภาษาของเอกสารใน link <br>
-                    media ระบุสื่อหรืออุปกรณ์ ที่ลิงค์ไว้กับเอกสาร<br>
-                    ping ระบุ link แจ้งเตือนใน ping เพื่อใช้แจ้งให้เจ้าของเว็บไซต์ทราบหากมีการคลิกลิงค์<br>
-                    referrerpolicy ระบุผู้อ้างอิงที่จะส่ง <br>
-                    rel ระบุความสัมพันธ์ระหว่างเอกสารปัจจุบันและเอกสารใน link <br>
-                    target ระบุตำแหน่งที่จะเปิดเอกสารใน link <br>
-                    type ระบุประเภท media type ของเอกสารใน link<br>
-                </td>
-            </tr>
-            <tr>
-                <td id="tag">
+                <td id="tag" rowspan="2">
                     <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul"
                         target="_blank">&#60;ul&#62;</a>
                 </td>
-                <td>
-                    compact ระบุให้ลิสแสดงผลออกมาเป็นขนาดเล็ก <br>
-                    type ตั้งค่า bullet style เป็น circle, disc หรือsquare  <br>
-                </td>
+                <td>compact</td>
+                <td>ระบุให้ลิสแสดงผลออกมาเป็นขนาดเล็ก</td>
             </tr>
             <tr>
-                <td id="tag">
-                    <a href="https://www.w3schools.com/tags/tag_ol.asp"
-                        target="_blank">&#60;ol&#62;</a>
-                </td>
-                <td>
-                    reversed ระบุว่าลำดับรายการจะลดลง เช่น (9,8,7...) <br>
-                    start ระบุค่าเริ่มต้นของรายการ <br>
-                    type ระบุชนิดของเครื่องหมายที่จะใช้ในรายการ เช่น (1, A, a, I, i) <br>
-                </td>
+                <td>type</td>
+                <td>ตั้งค่า bullet style เป็น circle, disc หรือsquare</td>
             </tr>
             <tr>
-                <td id="tag">
+                <td id="tag" rowspan="3">
+                    <a href="https://www.w3schools.com/tags/tag_ol.asp" target="_blank">&#60;ol&#62;</a>
+                </td>
+                <td>reversed</td>
+                <td>ระบุว่าลำดับรายการจะลดลง เช่น (9,8,7...)</td>
+            </tr>
+            <tr>
+                <td>start</td>
+                <td>ระบุค่าเริ่มต้นของรายการ</td>
+            </tr>
+            <tr>
+                <td>type</td>
+                <td>ระบุชนิดของเครื่องหมายที่จะใช้ในรายการ เช่น (1, A, a, I, i)</td>
+            </tr>
+            <tr>
+                <td id="tag" rowspan="9">
                     <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table"
                         target="_blank">&#60;table&#62;</a>
                 </td>
-                <td>
-                    align จัดตำแหน่ง left, center, right <br>
-                    bgcolor ระบุสีพื้นหลังของตาราง  <br>
-                    border กำหนดขนาดพิกเซลของกรอบตาราง <br>
-                    cellpadding กำหนดช่องว่างระหว่างเนื้อหาของเซลล์และเส้นขอบของเซลล์<br>
-                    cellspacing กำหนดขนาดช่องว่างระหว่างเซลล์ <br>
-                    frame กำหนดด้านข้างของเฟรมที่ล้อมรอบตารางที่ต้องแสดง <br>
-                    rules กำหนดกฎ การแสดงเส้นตาราง <br>
-                    summary กำหนดข้อความที่สรุปเนื้อหาของตาราง<br>
-                    width กำหนดความกว้างของตาราง <br>
-                </td>
+                <td>align</td>
+                <td>จัดตำแหน่ง left, center, right</td>
             </tr>
             <tr>
-                <td id="tag">
-                    <a href="https://www.w3schools.com/tags/tag_form.asp"
-                        target="_blank">&#60;form&#62;</a>
-                </td>
-                <td>
-                    accept-charset ระบุการเข้ารหัสอักขระที่จะใช้สำหรับการส่งแบบฟอร์ม<br>
-                    action ระบุตำแหน่งที่จะส่งข้อมูลแบบฟอร์ม เมื่อส่งแบบฟอร์ม <br>
-                    autocomplete ระบุการเปิดหรือปิด การเติมข้อความอัตโนมัติ <br>
-                    enctype ระบุวิธีการเข้ารหัสข้อมูลแบบฟอร์มเมื่อส่งไปยังเซิร์ฟเวอร์ (เฉพาะ method="post") <br>
-                    method ระบุ HTTP method ที่จะใช้ เมื่อส่งแบบฟอร์มข้อมูล <br>
-                    name ระบุชื่อของแบบฟอร์ม <br>
-                    novalidate ระบุว่าไม่ควรตรวจสอบความถูกต้องของฟอร์มเมื่อส่ง <br>
-                    rel ระบุความสัมพันธ์ระหว่างตำแหน่งส่งแบบฟอร์ม กับเอกสารปัจจุบัน <br>
-                    target ระบุตำแหน่งที่จะแสดงการตอบสนองที่ได้รับ หลังจากส่งแบบฟอร์ม <br>
-                </td>
+                <td>bgcolor</td>
+                <td>ระบุสีพื้นหลังของตาราง</td>
             </tr>
             <tr>
-                <td id="tag">
-                    <a href="https://www.w3schools.com/tags/tag_button.asp"
-                        target="_blank">&#60;button&#62;</a>
+                <td>border</td>
+                <td>กำหนดขนาดพิกเซลของกรอบตาราง</td>
+            </tr>
+            <tr>
+                <td>cellpadding</td>
+                <td>กำหนดช่องว่างระหว่างเนื้อหาของเซลล์และเส้นขอบของเซลล์</td>
+            </tr>
+            <tr>
+                <td>cellspacing</td>
+                <td>กำหนดขนาดช่องว่างระหว่างเซลล์</td>
+            </tr>
+            <tr>
+                <td>frame</td>
+                <td>กำหนดด้านข้างของเฟรมที่ล้อมรอบตารางที่ต้องแสดง</td>
+            </tr>
+            <tr>
+                <td>rules</td>
+                <td>กำหนดกฎ การแสดงเส้นตาราง</td>
+            </tr>
+            <tr>
+                <td>summary</td>
+                <td>กำหนดข้อความที่สรุปเนื้อหาของตาราง</td>
+            </tr>
+            <tr>
+                <td>width</td>
+                <td>กำหนดความกว้างของตาราง</td>
+            </tr>
+            <tr>
+                <td id="tag" rowspan="9">
+                    <a href="https://www.w3schools.com/tags/tag_form.asp" target="_blank">&#60;form&#62;</a>
                 </td>
-                <td>
-                    autofocus ระบุให้มีการปรับโฟกัสโดยอัตโนมัติ เมื่อโหลดกดปุ่ม <br>
-                    disabled ระบุว่าปุ่มปิดใช้งาน <br>
-                    form ระบุว่าปุ่มใช้กับ form id ชื่ออะไร <br>
-                    formaction ระบุตำแหน่งที่จะส่งข้อมูลแบบฟอร์มเมื่อส่งแบบฟอร์ม สำหรับ type = "submit" เท่านั้น <br>
-                    formenctype ระบุวิธีเข้ารหัสข้อมูลในแบบฟอร์มก่อนส่งไปยังเซิร์ฟเวอร์ สำหรับ type = "submit" เท่านั้น
-                    <br>
-                    formmethod ระบุวิธีการส่ง form-data (ซึ่ง HTTP วิธีใด) สำหรับ type = "submit" เท่านั้น <br>
-                    formnovalidate ระบุว่าไม่ควรตรวจสอบความถูกต้องของข้อมูลแบบฟอร์มเมื่อส่ง สำหรับ type = "submit"
-                    เท่านั้น <br>
-                    formtarget ระบุตำแหน่งที่จะแสดงการตอบสนองหลังจากส่งแบบฟอร์ม สำหรับ type = "submit" เท่านั้น <br>
-                    name ระบุชื่อของปุ่ม <br>
-                    type ระบุประเภทของปุ่ม <br>
-                    value ระบุค่าสำหรับปุ่มก่อนได้รับการเปลี่ยนแปลง <br>
+                <td>accept-charset</td>
+                <td>ระบุการเข้ารหัสอักขระที่จะใช้สำหรับการส่งแบบฟอร์ม</td>
+            </tr>
+            <tr>
+                <td>action</td>
+                <td>ระบุตำแหน่งเอกสารที่จะส่งข้อมูลแบบฟอร์ม เมื่อมีการส่งแบบฟอร์ม</td>
+            </tr>
+            <tr>
+                <td>autocomplete</td>
+                <td>ระบุการเปิดหรือปิด การเติมข้อความอัตโนมัติ</td>
+            </tr>
+            <tr>
+                <td>enctype</td>
+                <td>ระบุวิธีการเข้ารหัสข้อมูลแบบฟอร์มเมื่อส่งไปยังเซิร์ฟเวอร์ (เฉพาะ method="post")</td>
+            </tr>
+            <tr>
+                <td>method</td>
+                <td>ระบุ HTTP method ที่จะใช้ เมื่อส่งแบบฟอร์มข้อมูล</td>
+            </tr>
+            <tr>
+                <td>name</td>
+                <td>ระบุชื่อของแบบฟอร์ม</td>
+            </tr>
+            <tr>
+                <td>novalidate</td>
+                <td>ระบุว่าไม่ต้องตรวจสอบความถูกต้องของฟอร์มเมื่อส่ง</td>
+            </tr>
+            <tr>
+                <td>rel</td>
+                <td>ระบุความสัมพันธ์ระหว่างตำแหน่งส่งแบบฟอร์ม กับเอกสารปัจจุบัน</td>
+            </tr>
+            <tr>
+                <td>target</td>
+                <td>ระบุตำแหน่งที่จะแสดงการตอบสนอง หลังจากส่งแบบฟอร์ม</td>
+            </tr>
+            <tr>
+                <td id="tag" rowspan="11">
+                    <a href="https://www.w3schools.com/tags/tag_button.asp" target="_blank">&#60;button&#62;</a>
                 </td>
+                <td>autofocus</td>
+                <td>ระบุให้มีการปรับโฟกัสโดยอัตโนมัติ เมื่อกดปุ่ม เช่นเมื่อใช้กับการแสดง alert หน้าเอกสารจะปรับมาชัดที่
+                    alert</td>
+            </tr>
+            <tr>
+                <td>disabled</td>
+                <td>ระบุให้ปุ่มปิดการใช้งาน</td>
+            </tr>
+            <tr>
+                <td>form</td>
+                <td>ระบุว่าปุ่มใช้นี้กับ form id ชื่ออะไร ใช้เมื่อปุ่มอยู่นอก tag form</td>
+            </tr>
+            <tr>
+                <td>formaction</td>
+                <td>ระบุตำแหน่งเอกสารที่จะส่งข้อมูลแบบฟอร์ม เมื่อจะส่งแบบฟอร์มไปยังเอกสารที่ไม่ได้ระบุใน atrribute
+                    action ใน tag form ใช้กับ type = "submit" เท่านั้น</td>
+            </tr>
+            <tr>
+                <td>formenctype</td>
+                <td>ระบุวิธีเข้ารหัสข้อมูลในแบบฟอร์มก่อนส่งไปยังเซิร์ฟเวอร์ ใช้กับ type = "submit" เท่านั้น</td>
+            </tr>
+            <tr>
+                <td>formmethod</td>
+                <td>ระบุวิธีการส่ง HTTP method ถ้าใน tag form ไม่ได้ระบุไว้จะใช้ method GET ในการส่ง ใช้กับ type =
+                    "submit" เท่านั้น</td>
+            </tr>
+            <tr>
+                <td>formnovalidate</td>
+                <td>ระบุว่าไม่ต้องตรวจสอบความถูกต้องของข้อมูลแบบฟอร์มเมื่อส่ง ใช้กับ type = "submit" เท่านั้น</td>
+            </tr>
+            <tr>
+                <td>formtarget</td>
+                <td>ระบุตำแหน่งที่จะแสดงการตอบสนองหลังจากส่งแบบฟอร์ม ใช้กับ type = "submit" เท่านั้น</td>
+            </tr>
+            <tr>
+                <td>name</td>
+                <td>ระบุชื่อสำหรับปุ่ม</td>
+            </tr>
+            <tr>
+                <td>type</td>
+                <td>ระบุประเภทของปุ่ม</td>
+            </tr>
+            <tr>
+                <td>value</td>
+                <td>ระบุค่าเริ่มต้นสำหรับปุ่ม</td>
             </tr>
         </table>
     </div>
