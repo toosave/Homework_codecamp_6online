@@ -65,6 +65,35 @@
         border: 1px solid rgb(44, 76, 221);
         }
         .pagination a:hover:not(.active) {background-color: #ddd;}
+        .tooltip {
+            display: inline-block;
+        }
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: rgb(143, 7, 255);
+            color: #fff;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1;
+            top: 85%;
+            left:24ch;
+            margin-left: -60px;
+        }
+        .tooltip .tooltiptext::after {
+            content: "";
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent transparent rgb(143, 7, 255) transparent;
+        }
+        .tooltip:hover .tooltiptext {visibility: visible;}
     </style>
 </head>
 <body>
@@ -74,25 +103,29 @@
                 <a href="Lab1.html">Home</a>
             </li>
             <li>
-                <a href="news.html">News</a>
+                <a href="Dropdown.html" class="active">Dropdown</a>
             </li>
             <li>
-                <a href="contact.html" class="active">Contact</a>
+                <div class="tooltip">
+                    <a href="HoverOverMe.html">HoverOverMe</a>
+                    <span class="tooltiptext">Tooltip</span>
+                </div>
             </li>
             <li class="rightli" style="float:right">
-                <a href="about.html">About</a>
+                <a href="navbar.html">Navigator bar</a>
             </li>
         </ul>
     </div>
+
     <div class="footer">
         <div class="pagination">
-            <a href="#">&laquo;</a>
+            <a href="#" style="color: rgb(44, 76, 221)">Pagination</a>
             <a href="Lab1.html">1</a>
-            <a href="news.html">2</a>
-            <a href="contact.html" class="active">3</a>
-            <a href="about.html">4</a>
-            <a href="#">&raquo;</a>
+            <a href="Dropdown.html" class="active">2</a>
+            <a href="HoverOverMe.html">3</a>
+            <a href="navbar.html">4</a>
+            <a href="#" style="color: rgb(44, 76, 221)">Pagination</a>
         </div>
-    </div>
+    </div> 
 </body>
 </html>
