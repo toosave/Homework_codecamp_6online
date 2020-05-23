@@ -5,21 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS</title>
     <style>
+        /* Navbar */
         .navbar {
             position: fixed;
             top: 0;
             left: 0;
-            width: 100%; 
-        }
-        .footer {
-            position: fixed;
-            bottom: 0;
-            left: 0;
             width: 100%;
-            display:flex;
-            justify-content:center;
-            margin-bottom: 50px;
         }
+
+        /* Menu ul li a */
         ul.horizontal {
             list-style-type: none;
             margin-top: 0;
@@ -28,9 +22,11 @@
             overflow: hidden;
             background-color: rgb(10, 119, 243);
         }
+
         ul.horizontal li {
             float: left;
         }
+
         ul.horizontal li a {
             display: inline-block;
             color: white;
@@ -38,36 +34,58 @@
             padding: 14px 16px;
             text-decoration: none;
         }
+
         ul.horizontal li a:hover:not(.active) {
             background-color: rgb(111, 127, 156);
         }
+
         ul.horizontal li a.active {
-            background-color:rgb(44, 76, 221);
+            background-color: rgb(44, 76, 221);
         }
+
         .rightli {
-        float:right;
+            float: right;
         }
-        /* Pagination */
+
+        /* pagination Footer */
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+
         .pagination {
-        display: inline-block;
+            display: inline-block;
         }
+
         .pagination a {
-        color: black;
-        float: left;
-        padding: 8px 16px;
-        text-decoration: none;
-        transition: background-color .3s;
-        border: 1px solid #ddd;
+            color: black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+            transition: background-color .3s;
+            border: 1px solid #ddd;
         }
+
         .pagination a.active {
-        background-color: rgb(44, 76, 221);
-        color: white;
-        border: 1px solid rgb(44, 76, 221);
+            background-color: rgb(44, 76, 221);
+            color: white;
+            border: 1px solid rgb(44, 76, 221);
         }
-        .pagination a:hover:not(.active) {background-color: #ddd;}
+
+        .pagination a:hover:not(.active) {
+            background-color: #ddd;
+        }
+
         .tooltip {
             display: inline-block;
         }
+
+        /* ToolTip */
         .tooltip .tooltiptext {
             visibility: hidden;
             width: 120px;
@@ -80,9 +98,10 @@
             position: absolute;
             z-index: 1;
             top: 85%;
-            left:24ch;
+            left: 24ch;
             margin-left: -60px;
         }
+
         .tooltip .tooltiptext::after {
             content: "";
             position: absolute;
@@ -93,7 +112,36 @@
             border-style: solid;
             border-color: transparent transparent rgb(143, 7, 255) transparent;
         }
-        .tooltip:hover .tooltiptext {visibility: visible;}
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
+
+        /* Drop Down */
+        .dropdown {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .dropdown .dropdowntext {
+            visibility: hidden;
+            width: 120px;
+            background-color: rgb(143, 7, 255);
+            color: #fff;
+            text-align: left;
+            position: absolute;
+            z-index: 1;
+            top: 46px;
+            left: 8ch;
+            margin-left: 0px;
+        }
+
+        .dropdown:hover .dropdowntext {
+            visibility: visible;
+        }
     </style>
 </head>
 <body>
@@ -103,7 +151,13 @@
                 <a href="Lab1.html">Home</a>
             </li>
             <li>
-                <a href="Dropdown.html" class="active">Dropdown</a>
+                <div class="dropdown">Dropdown
+                    <div class="dropdowntext">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
             </li>
             <li>
                 <div class="tooltip">
