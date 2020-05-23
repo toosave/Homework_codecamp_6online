@@ -1,0 +1,152 @@
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* Menu ul li a */
+ul.horizontal {
+    list-style-type: none;
+    margin-top: 0;
+    margin-left: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(10, 119, 243);
+}
+
+ul.horizontal li {
+    float: left;
+}
+
+ul.horizontal li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.horizontal li a:hover:not(.active) {
+    background-color: rgb(164, 178, 204);
+}
+
+ul.horizontal li a.active {
+    background-color: rgb(44, 76, 221);
+}
+
+.rightli {
+    float: right;
+}
+
+/* pagination Footer */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+}
+
+.pagination a.active {
+    background-color: rgb(44, 76, 221);
+    color: white;
+    border: 1px solid rgb(44, 76, 221);
+}
+
+.pagination a:hover:not(.active) {
+    background-color: rgb(164, 178, 204);
+}
+
+.tooltip {
+    display: inline-block;
+}
+
+/* ToolTip */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(143, 7, 255);
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 85%;
+    left: 24ch;
+    margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent rgb(143, 7, 255) transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+/* Drop Down */
+.dropdown {
+    display: inline-block;
+    color: white;
+    padding: 14px 16px;
+}
+
+.dropdowntext {
+    visibility: hidden;
+    width: 210px;
+    background-color: rgb(143, 7, 255);
+    color: #fff;
+    position: absolute;
+    top: 46px;
+    left: 8ch;
+}
+
+.dropdowntext a {
+    width: 178px;
+    text-align: left;
+}
+
+.dropdown:hover .dropdowntext {
+    visibility: visible;
+}
+
+div.dropdown .active {
+    background-color: rgb(44, 76, 221);
+    color: white;
+    border: 1px solid rgb(44, 76, 221);
+}
+
+div.dropdown:hover:not(.active) {
+    background-color: rgb(164, 178, 204);
+}
+
+.active {
+    background-color: rgb(44, 76, 221);
+    color: white;
+}
