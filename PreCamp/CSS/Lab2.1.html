@@ -5,182 +5,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BangkokPost</title>
-
-    <style>
-        /* nevbar */
-        .navbar {
-            position: fixed;
-            background-color: rgb(19, 47, 101);
-            width: 100%;
-            height: 120px;
-            top: 0;
-            left: 0;
-        }
-
-        .navbar div {
-            display: inline-block;
-            text-align: center;
-            margin-top: 24px;
-            margin-left: 20px;
-        }
-        .navbar div img {
-            margin-left: 3vw;
-            margin-right: 1vw;
-            width: 350px;
-        }
-        
-        .navbar div a {
-            color: white;
-            font-family: sans-serif;
-            font-weight: bold;
-            font-size:1vw;
-            text-decoration: none;
-        }
-
-        @media only screen and (max-width:900px) {
-            /* For mobile phones: */
-            .navbar {
-                height:60px;
-            }
-
-            .navbar div img {
-                width: 165px;
-            }
-
-            .navbar div a {
-                display: none;
-            }
-            /* block div */
-            .left-block , .center-block , .right-block {
-                display: grid;
-            }
-            .left-block {
-                grid-template-columns:300px;
-            }
-            .center-block {
-                grid-template-columns:300px;
-            }
-            .right-block {
-                grid-template-columns:300px;
-            }
-        }
-    </style>
-
+    <link rel="stylesheet" href="./Lab2.1.css">
 </head>
 
 <body>
-    <div class="navbar">
-        <div>
-            <img src="./img/BangkokPost.svg" alt="Bangkok Post">
+    <div class="grid-container">
+        <div class="navbar">
+            <div>
+                <img src="./BangkokPost/BangkokPost.svg" alt="Bangkok Post">
+            </div>
+            <div><a href="#">THAILAND</a></div>
+            <div><a href="#">WORLD</a></div>
+            <div><a href="#">BUSINESS</a></div>
+            <div><a href="#">OPTION</a></div>
+            <div><a href="#">AUTO</a></div>
+            <div><a href="#">LIFE</a></div>
+            <div><a href="#">LEARNING</a></div>
+            <div><a href="#">VIDEO</a></div>
+            <div><a href="#">MORE+</a></div>
         </div>
-        <div><a href="#">THAILAND</a></div>
-        <div><a href="#">WORLD</a></div>
-        <div><a href="#">BUSINESS</a></div>
-        <div><a href="#">OPTION</a></div>
-        <div><a href="#">AUTO</a></div>
-        <div><a href="#">LIFE</a></div>
-        <div><a href="#">LEARNING</a></div>
-        <div><a href="#">VIDEO</a></div>
-        <div><a href="#">MORE+</a></div>
-    </div>
-    <div class="left-block">
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur et quo sunt nihil, dolore quas
-        </p>
-        <p>
-            libero consectetur rem tempore est quos nesciunt, tempora quod sed ipsa blanditiis magni cupiditate! Iusto,
-        </p>
-        <p>
-            illum minima. Eaque saepe ad voluptatibus cum quis odio beatae neque sunt? Cumque, animi laboriosam nostrum
-        </p>
-        <p>
-            beatae nihil ut aliquam labore debitis ea porro doloremque, commodi facere ipsum itaque, asperiores adipisci
-        </p>
-        <p>
-            voluptatem sit assumenda esse cupiditate maiores dolorem a rem tempore? Laudantium distinctio nam eveniet
-        </p>
-        <p>
-            ipsum nostrum, provident odit vel non expedita est autem voluptates nulla enim veritatis quam minus. Quo
-        </p>
-        <p>
-            earum nisi sint assumenda ullam debitis, porro voluptate, quasi autem asperiores et harum! Sequi pariatur
-        </p>
-        <p>
-            incidunt excepturi odit, maxime natus delectus quibusdam hic distinctio aperiam commodi in consequuntur eum
-        </p>
-    </div>
-    <div class="center-block">
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur et quo sunt nihil, dolore quas
-            libero consectetur rem tempore est quos nesciunt, tempora quod sed ipsa blanditiis magni cupiditate! Iusto,
-            illum minima. Eaque saepe ad voluptatibus cum quis odio beatae neque sunt? Cumque, animi laboriosam nostrum
-            beatae nihil ut aliquam labore debitis ea porro doloremque, commodi facere ipsum itaque, asperiores adipisci
-            voluptatem sit assumenda esse cupiditate maiores dolorem a rem tempore? Laudantium distinctio nam eveniet
-            ipsum nostrum, provident odit vel non expedita est autem voluptates nulla enim veritatis quam minus. Quo
-            earum nisi sint assumenda ullam debitis, porro voluptate, quasi autem asperiores et harum! Sequi pariatur
-            incidunt excepturi odit, maxime natus delectus quibusdam hic distinctio aperiam commodi in consequuntur eum
-            rerum fugit accusantium necessitatibus nobis. Eum repellendus vel laborum quo laudantium sunt eligendi,
-            adipisci animi, aliquam a ducimus. Repellendus delectus distinctio quae itaque aut enim excepturi, optio
-            dolorum officiis quidem ullam necessitatibus facere nisi eos quia? Temporibus dolor inventore voluptatibus
-            nostrum repellat nihil ratione sint porro possimus ducimus? Officia aut distinctio fugiat alias voluptatibus
-            animi delectus? Modi autem, harum consequuntur expedita commodi non illum laudantium temporibus ipsa quidem
-            tenetur nemo, sed in, error ullam explicabo voluptatem odit doloribus necessitatibus!
-        </p>
-    </div><br><br>
-    <div class="center-block">
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur et quo sunt nihil, dolore quas
-            libero consectetur rem tempore est quos nesciunt, tempora quod sed ipsa blanditiis magni cupiditate! Iusto,
-            illum minima. Eaque saepe ad voluptatibus cum quis odio beatae neque sunt? Cumque, animi laboriosam nostrum
-            beatae nihil ut aliquam labore debitis ea porro doloremque, commodi facere ipsum itaque, asperiores adipisci
-            voluptatem sit assumenda esse cupiditate maiores dolorem a rem tempore? Laudantium distinctio nam eveniet
-            ipsum nostrum, provident odit vel non expedita est autem voluptates nulla enim veritatis quam minus. Quo
-            earum nisi sint assumenda ullam debitis, porro voluptate, quasi autem asperiores et harum! Sequi pariatur
-            incidunt excepturi odit, maxime natus delectus quibusdam hic distinctio aperiam commodi in consequuntur eum
-            rerum fugit accusantium necessitatibus nobis. Eum repellendus vel laborum quo laudantium sunt eligendi,
-            adipisci animi, aliquam a ducimus. Repellendus delectus distinctio quae itaque aut enim excepturi, optio
-            dolorum officiis quidem ullam necessitatibus facere nisi eos quia? Temporibus dolor inventore voluptatibus
-            nostrum repellat nihil ratione sint porro possimus ducimus? Officia aut distinctio fugiat alias voluptatibus
-            animi delectus? Modi autem, harum consequuntur expedita commodi non illum laudantium temporibus ipsa quidem
-            tenetur nemo, sed in, error ullam explicabo voluptatem odit doloribus necessitatibus!
-        </p>
-    </div><br><br>
-    <div class="right-block">
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur et quo sunt nihil, dolore quas
-            libero consectetur rem tempore est quos nesciunt, tempora quod sed ipsa blanditiis magni cupiditate! Iusto,
-            illum minima. Eaque saepe ad voluptatibus cum quis odio beatae neque sunt? Cumque, animi laboriosam nostrum
-            beatae nihil ut aliquam labore debitis ea porro doloremque, commodi facere ipsum itaque, asperiores adipisci
-            voluptatem sit assumenda esse cupiditate maiores dolorem a rem tempore? Laudantium distinctio nam eveniet
-            ipsum nostrum, provident odit vel non expedita est autem voluptates nulla enim veritatis quam minus. Quo
-            earum nisi sint assumenda ullam debitis, porro voluptate, quasi autem asperiores et harum! Sequi pariatur
-            incidunt excepturi odit, maxime natus delectus quibusdam hic distinctio aperiam commodi in consequuntur eum
-            rerum fugit accusantium necessitatibus nobis. Eum repellendus vel laborum quo laudantium sunt eligendi,
-            adipisci animi, aliquam a ducimus. Repellendus delectus distinctio quae itaque aut enim excepturi, optio
-            dolorum officiis quidem ullam necessitatibus facere nisi eos quia? Temporibus dolor inventore voluptatibus
-            nostrum repellat nihil ratione sint porro possimus ducimus? Officia aut distinctio fugiat alias voluptatibus
-            animi delectus? Modi autem, harum consequuntur expedita commodi non illum laudantium temporibus ipsa quidem
-            tenetur nemo, sed in, error ullam explicabo voluptatem odit doloribus necessitatibus!
-        </p>
-    </div><br><br>
-    <div class="right-block">
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur et quo sunt nihil, dolore quas
-            libero consectetur rem tempore est quos nesciunt, tempora quod sed ipsa blanditiis magni cupiditate! Iusto,
-            illum minima. Eaque saepe ad voluptatibus cum quis odio beatae neque sunt? Cumque, animi laboriosam nostrum
-            beatae nihil ut aliquam labore debitis ea porro doloremque, commodi facere ipsum itaque, asperiores adipisci
-            voluptatem sit assumenda esse cupiditate maiores dolorem a rem tempore? Laudantium distinctio nam eveniet
-            ipsum nostrum, provident odit vel non expedita est autem voluptates nulla enim veritatis quam minus. Quo
-            earum nisi sint assumenda ullam debitis, porro voluptate, quasi autem asperiores et harum! Sequi pariatur
-            incidunt excepturi odit, maxime natus delectus quibusdam hic distinctio aperiam commodi in consequuntur eum
-            rerum fugit accusantium necessitatibus nobis. Eum repellendus vel laborum quo laudantium sunt eligendi,
-            adipisci animi, aliquam a ducimus. Repellendus delectus distinctio quae itaque aut enim excepturi, optio
-            dolorum officiis quidem ullam necessitatibus facere nisi eos quia? Temporibus dolor inventore voluptatibus
-            nostrum repellat nihil ratione sint porro possimus ducimus? Officia aut distinctio fugiat alias voluptatibus
-            animi delectus? Modi autem, harum consequuntur expedita commodi non illum laudantium temporibus ipsa quidem
-            tenetur nemo, sed in, error ullam explicabo voluptatem odit doloribus necessitatibus!
-        </p>
-    </div><br><br>
+        <div class="left-block">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur et quo sunt nihil, dolore quas
+            </p>
+            <p>
+                libero consectetur rem tempore est quos nesciunt, tempora quod sed ipsa blanditiis magni cupiditate! Iusto,
+            </p>
+            <p>
+                illum minima. Eaque saepe ad voluptatibus cum quis odio beatae neque sunt? Cumque, animi laboriosam nostrum
+            </p>
+            <p>
+                beatae nihil ut aliquam labore debitis ea porro doloremque, commodi facere ipsum itaque, asperiores adipisci
+            </p>
+            <p>
+                voluptatem sit assumenda esse cupiditate maiores dolorem a rem tempore? Laudantium distinctio nam eveniet
+            </p>
+            <p>
+                ipsum nostrum, provident odit vel non expedita est autem voluptates nulla enim veritatis quam minus. Quo
+            </p>
+            <p>
+                earum nisi sint assumenda ullam debitis, porro voluptate, quasi autem asperiores et harum! Sequi pariatur
+            </p>
+            <p>
+                incidunt excepturi odit, maxime natus delectus quibusdam hic distinctio aperiam commodi in consequuntur eum
+            </p>
+        </div>
+        <div class="center-block">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur et quo sunt nihil, dolore quas
+                libero consectetur rem tempore est quos nesciunt, tempora quod sed ipsa blanditiis magni cupiditate! Iusto,
+                illum minima. Eaque saepe ad voluptatibus cum quis odio beatae neque sunt? Cumque, animi laboriosam nostrum
+                beatae nihil ut aliquam labore debitis ea porro doloremque, commodi facere ipsum itaque, asperiores adipisci
+                voluptatem sit assumenda esse cupiditate maiores dolorem a rem tempore? Laudantium distinctio nam eveniet
+                ipsum nostrum, provident odit vel non expedita est autem voluptates nulla enim veritatis quam minus. Quo
+                earum nisi sint assumenda ullam debitis, porro voluptate, quasi autem asperiores et harum!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur et quo sunt nihil, dolore quas
+                libero consectetur rem tempore est quos nesciunt, tempora quod sed ipsa blanditiis magni cupiditate! Iusto,
+                illum minima. Eaque saepe ad voluptatibus cum quis odio beatae neque sunt? Cumque, animi laboriosam nostrum
+                beatae nihil ut aliquam labore debitis ea porro doloremque, commodi facere ipsum itaque, asperiores adipisci
+                voluptatem sit assumenda esse cupiditate maiores dolorem a rem tempore? Laudantium distinctio nam eveniet
+                ipsum nostrum, provident odit vel non expedita est autem voluptates nulla enim veritatis quam minus. Quo
+                earum nisi sint assumenda ullam debitis, porro voluptate, quasi autem asperiores et harum!
+            </p>
+        </div>
+        <div class="right-block">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur et quo sunt nihil, dolore quas
+                libero consectetur rem tempore est quos nesciunt, tempora quod sed ipsa blanditiis magni cupiditate! Iusto,
+                illum minima. Eaque saepe ad voluptatibus cum quis odio beatae neque sunt? Cumque, animi laboriosam nostrum
+                beatae nihil ut aliquam labore debitis ea porro doloremque, commodi facere ipsum itaque, asperiores adipisci
+                voluptatem sit assumenda esse cupiditate maiores dolorem a rem tempore? Laudantium distinctio nam eveniet
+                ipsum nostrum, provident odit vel non expedita est autem voluptates nulla enim veritatis quam minus. Quo
+                earum nisi sint assumenda ullam debitis, porro voluptate, quasi autem asperiores et harum!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis pariatur et quo sunt nihil, dolore quas
+                libero consectetur rem tempore est quos nesciunt, tempora quod sed ipsa blanditiis magni cupiditate! Iusto,
+                illum minima. Eaque saepe ad voluptatibus cum quis odio beatae neque sunt? Cumque, animi laboriosam nostrum
+                beatae nihil ut aliquam labore debitis ea porro doloremque, commodi facere ipsum itaque, asperiores adipisci
+                voluptatem sit assumenda esse cupiditate maiores dolorem a rem tempore? Laudantium distinctio nam eveniet
+                ipsum nostrum, provident odit vel non expedita est autem voluptates nulla enim veritatis quam minus. Quo
+                earum nisi sint assumenda ullam debitis, porro voluptate, quasi autem asperiores et harum!
+            </p>
+        </div>
+    </div>    
 </body>
 
 </html>
