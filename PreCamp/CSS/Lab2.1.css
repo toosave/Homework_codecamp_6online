@@ -5,9 +5,6 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-areas: "header header header header header"
-                       "left   center center right  right"
-                       "left   center center right  right"
-                       "left   center center right  right"
                        "left   center center right  right";
   column-gap: 1em;
   row-gap: 1em;
@@ -27,6 +24,9 @@
 } 
 /* block nevbar */
 .navbar {
+  position: sticky;
+  top: 8px;
+  left: 0px;
   grid-area: header;
   background-color: rgb(19, 47, 101);
   height: 110px;
@@ -89,6 +89,9 @@
   }
   /* block navbar */
   .navbar {
+    position: sticky;
+    top: -12px;
+    left: 0px;
     grid-area: header;
     height:35px;
     margin-top: -20px;
