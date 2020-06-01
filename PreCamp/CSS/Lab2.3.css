@@ -1,0 +1,118 @@
+.fa-caret-down:before{content:"";}
+.fa-search:before{content:"";}
+.fa-chevron-right:before{content:"";}
+.fa-keyboard-o:before{content:"";}
+.fa-language:before{content:"";}
+.fa-line-chart:before{content:"";}
+.fa-briefcase:before{content:"";}
+.fa-gears:before{content:"";}
+.fa-users:before{content:"";}
+.fa-globe:before{content:"";}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+body {
+    background-color: #eee;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.grid-container {
+    background-color: #F1F5FF;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "picture"
+        "search"
+        "school"
+        "headline"
+        "courses"
+        "browse"
+        "footer";
+    justify-content: center;
+}
+.header {
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header";
+    height: 80px;
+    box-shadow: 0 3px 3px rgba(49, 48, 48, 0.4);
+    color: #007DB8;
+    z-index: 2;
+    display: inline-block;
+}
+.header li {
+    display: inline-block;
+    align-items: center;
+}
+.picture{
+    background-color: #7fa0f3;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "picture";
+    z-index: 1;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0);
+    justify-content: center;
+    justify-self: center;
+}
+.picture div {
+    width: 450px;
+    position: absolute;
+    background-color: #F1F5FF;
+    font-family: "Open Sans Semibold";
+    font-size: 42px;
+    color: #414141;
+}
+.search{
+    background-color: #DCEEF7;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "search";
+    height: 105px;
+    color: #007DB8;
+
+}
+.school{
+    border: 1px solid #FFFFF7;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "school";
+}
+.headline{
+    border: 1px solid #FFFFF7;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "headline";
+}
+.courses{
+    border: 1px solid #FFFFF7;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "courses";
+}
+.browse{
+    border: 1px solid #FFFFF7;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "browse";
+}
+.footer{
+    border: 1px solid #FFFFF7;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "footer";
+}
