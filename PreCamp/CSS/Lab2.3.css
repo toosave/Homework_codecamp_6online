@@ -48,12 +48,51 @@ body {
     box-shadow: 0 3px 3px rgba(49, 48, 48, 0.4);
     color: #007DB8;
     z-index: 2;
-    display: inline-block;
 }
-.header li {
-    display: inline-block;
-    align-items: center;
+.flex-container {
+    max-width: 100vw;
+    background-color: #ffffff;
+    margin: 0 auto;
+    padding: 0 0;
+    display: flex;
+    flex-direction: row;
+    flex: 3;
 }
+.flex-logo {
+    display: flex;
+    flex: 1;
+    justify-content: end;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.flex-logo img {
+    width: 77px;
+    height: 38.9px;
+}
+.flex-menu {
+    width: 1000px;
+    display: flex;
+    flex: auto;
+    justify-items: start;
+    align-items: end;
+    padding-bottom: 30px;
+}
+.flex-menu li {
+    list-style: none;
+    font-family: "Open Sans";
+    font-size: 18px;color: #007DB8;
+    font-weight: 600;
+}
+.flex-menu li:hover {
+    background-color: #007DB8;
+    color: #ffffff;
+}
+.flex-signin {
+    display: flex;
+    flex: 1;
+    justify-items: start;
+}
+
 .picture{
     background-color: #7fa0f3;
     display: grid;
@@ -66,6 +105,7 @@ body {
 }
 .picture div {
     width: 450px;
+    margin-top: 20px;
     position: absolute;
     background-color: #F1F5FF;
     font-family: "Open Sans Semibold";
@@ -79,6 +119,9 @@ body {
     grid-template-areas: "search";
     height: 105px;
     color: #007DB8;
+    font-family: "Open Sans";
+    font-size: 1.25em;
+    font-weight: 400;
 
 }
 .school{
