@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Lab2.3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Lab2.3</title>
     <!-- https://www.edx.org/ -->
 </head>
@@ -15,17 +16,33 @@
                     <img src="./img/edx-logo-header.png" alt="edx-logo">
                 </div>
                 <div class="flex-menu">
-                    <li><a href="#">Courses</a></li>
-                    <li class="fa-caret-down"></li>
-                    <li><a href="#"></a>Program & Degrees</li>
-                    <li class="fa-caret-down"></li>
-                    <li><a href="#"></a>Schools & Partners</li>
-                    <li><a href="#"></a>edX for Business</li>
-                    <li class="fa-search"></li>
+                    <div class="menu-wrapper">
+                        <li>
+                            <a href="#">Courses
+                                <i class="fa fa-caret-down"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">Program & Degrees
+                                <i class="fa fa-caret-down"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">Schools & Partners </a>
+                        </li>
+                        <li>
+                            <a href="#">edX for Business
+                                <i class="fa fa-caret-down"></i>
+                            </a>
+                        </li>
+                    </div>
+                    <div class="search-icon">
+                        <i class="fa fa-search"></i>
+                    </div>
                 </div>
                 <div class="flex-signin">
-                    <button>Sign In</button>
-                    <button>Register</button>
+                    <div class="signin-button">Sign In</div>
+                    <div class="register-button">Register</div>
                 </div>
             </div>
         </div>
@@ -35,7 +52,7 @@
             <div>Access 2500+ Online Courses from 140 Institutions. Start Today!</div>
         </div>
 
-        <div class="search">What do you want to learn?</div>
+        <div class="search-bar">What do you want to learn?</div>
 
         <div class="school">school</div>
 
