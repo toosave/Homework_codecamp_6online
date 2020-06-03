@@ -12,18 +12,15 @@
     margin: 0;
     padding: 0;
 }
-
 a {
     color: inherit;
     text-decoration: none;
 }
-
 body {
     background-color: #eee;
     color: #000000;
     font-family: Open Sans;
 }
-
 .grid-container {
     background-color: #F1F5FF;
     display: grid;
@@ -39,7 +36,6 @@ body {
         "footer";
     justify-content: center;
 }
-
 .header {
     background-color: #ffffff;
     display: grid;
@@ -50,7 +46,6 @@ body {
     color: #007DB8;
     z-index: 2;
 }
-
 .flex-container {
     max-width: 100vw;
     background-color: #ffffff;
@@ -60,7 +55,6 @@ body {
     flex-direction: row;
     flex: 3;
 }
-
 .flex-logo {
     display: flex;
     flex: 1;
@@ -69,12 +63,10 @@ body {
     margin-right: 20px;
     cursor: pointer;
 }
-
 .flex-logo img {
     width: 77px;
     height: 38.9px;
 }
-
 .flex-menu {
     width: 1000px;
     display: flex;
@@ -91,7 +83,6 @@ body {
     grid-template-rows: 80px;
     grid-template-areas: "menu menu menu menu space";
 }
-
 .menu-wrapper li {
     padding-right: 5px;
     padding-left: 5px;
@@ -99,12 +90,10 @@ body {
     grid-template-areas: "menu";
     align-items: center;
 }
-
 .menu-wrapper li:hover {
     background-color: #007DB8;
     color: #ffffff;
 }
-
 .search-icon {
     display: flex;
     flex: 1;
@@ -159,26 +148,52 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: "picture";
+    grid-template-rows: 320px;
     z-index: 1;
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0);
     justify-content: center;
     justify-self: center;
 }
+.picture img{
+    height: 320px;
+    width: 1200px;
+}
 .picture div {
-    width: 450px;
-    margin-top: 20px;
+    width: 400px;
+    margin-top: 30px;
     position: absolute;
     background-color: #F1F5FF;
     font-family: "Open Sans Semibold";
-    font-size: 42px;
+    font-size: 2.5em;
+    font-weight: 600;
     color: #414141;
+    line-height: 33pt;
+}
+.find-courses {
+    position: absolute;
+    top: 305px;
+    width: 150px;
+    height: 39px;
+    padding-top: 6px;
+    border-radius: 3px;
+    border: solid 1px #6d6d71;
+    background-color: #0577ad;
+    color: #ffffff;
+    font-size: 1.25em;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+}
+.find-courses:hover {
+    background-color: #045c86;
 }
 .search-bar{
     background-color: #DCEEF7;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1200px;
+    grid-template-rows: 116px;
     grid-template-areas: "search";
-    height: 105px;
+    justify-content: center;
     color: #007DB8;
     font-size: 1.25em;
     font-weight: 400;
@@ -187,34 +202,39 @@ body {
     border: 1px solid #FFFFF7;
 
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1200px;
     grid-template-areas: "school";
+    justify-content: center;
 }
 .headline{
     border: 1px solid #FFFFF7;
 
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1200px;
     grid-template-areas: "headline";
+    justify-content: center;
 }
 .courses{
     border: 1px solid #FFFFF7;
 
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1200px;
     grid-template-areas: "courses";
+    justify-content: center;
 }
 .browse{
     border: 1px solid #FFFFF7;
 
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1200px;
     grid-template-areas: "browse";
+    justify-content: center;
 }
 .footer{
     border: 1px solid #FFFFF7;
 
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1200px;
     grid-template-areas: "footer";
+    justify-content: center;
 }
