@@ -14,45 +14,46 @@
             border-radius: 9px;
             padding: 14px 9px;
         }
-        label[for="to"] { margin-left: 132px; }
+        /* Flying from */
         select[name="from"] {
-            width: 155px;
+            width: 170px;
         }
-        #from:required {
-            color: #666;
-        }
+        /* Flying to */
+        label[for="to"] { margin-left: 140px; }
         select[name="to"] {
-            margin-left: 55px;
-            width: 155px;
+            margin-left: 59px;
+            width: 170px;
         }
-        #to:required {
-            color: #666;
-        }
-        option[value=""] {
-            display: none;
-        }
-        #id option {
+        /* Select placeholder */
+        select:required:invalid { color: #666; }
+        option[value=""][disabled] { display: none; }
+        option {
             color: #000;
         }
+        /* Department */
         input[name="departing"] {
             height: 20px;
             width: 155px;
         }
+        /* Returning */
         label[for="returning"] { margin-left:145px; }
         input[name="returning"] {
             height: 20px;
             width: 155px;
             margin-left: 55px;
         }
-        #adult,
-        #child,
-        #infant,
-        #currency{
-            width: 55px; height: 20px; margin-right: 26px;
-        }
+        /* Count number Label */
         label[for="child"] { margin-left: 56px; }
         label[for="infant"] { margin-left: 57px; }
         label[for="currency"] { margin-left: 51px; }
+        /* Count number input */
+        #adult,
+        #child,
+        #infant{
+            width: 55px; height: 20px; margin-right: 26px;
+        }
+        #currency { width: 85px; height: 35px; margin-right: 26px; }
+        /* SEARCH Button */
         input[type="submit"] {
             padding: 9px 15px;
             border: none;
@@ -72,14 +73,14 @@
                 <label for="from">Flying from</label>
                 <label for="to">To</label><br>
                 <select id="from" name="from" required>
-                    <option value="" disabled selected>Bangkok</option>
+                    <option value="" disabled selected>Choose the Country</option>
                     <option value="japan">Bangkok</option>
                     <option value="korea">Korea</option>
                     <option value="laos">Laos</option>
                     <option value="vietnam">Vietnam</option>
                 </select>
                 <select id="to" name="to" required>
-                    <option value="" disabled selected>Japan</option>
+                    <option value="" disabled selected>Choose the Country</option>
                     <option value="japan">Japan</option>
                     <option value="korea">Korea</option>
                     <option value="laos">Laos</option>
@@ -104,7 +105,14 @@
                         onchange="">
                 <input type="number" id="child" name="child" value="0" placeholder="0">
                 <input type="number" id="infant" name="infant" value="0" placeholder="0">
-                <input type="number" id="currency" name="currency" value="0" placeholder="0"><br><br>
+                <select id="currency" name="currency" required>
+                    <option value="" disabled selected>JPY</option>
+                    <option value="jpy">JPY</option>
+                    <option value="bth">BTH</option>
+                    <option value="krw">KRW</option>
+                    <option value="lak">LAK</option>
+                    <option value="vnd">VND</option>
+                </select><br><br>
 
                 <input type="submit" value="SEARCH">
             </fieldset>
