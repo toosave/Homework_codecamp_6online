@@ -7,7 +7,9 @@
     <style>
         body { padding: 50px 10vw; }
         .Ans { margin-left: 35px; }
-        table { margin-left: 20px }
+        table {
+            margin-left: 20px;
+        }
         table, tr, td, th {
             border-collapse: collapse;
             border-spacing: 0px;
@@ -23,6 +25,96 @@
             text-indent: 20px;
         }
         li { line-height: 25px }
+        .slide10 {
+            position: absolute;
+            left: 240px;
+            width: 650px;
+            height: 385px;
+            border: 3px solid rgb(129, 128, 128);
+            border-radius: 5px;
+            background-color: #EEEEEE;
+            z-index: 0;
+        }
+        .slide10ontop {
+            display: inline-block;
+            position: absolute;
+            left: 250px;
+            margin-top: 10px;
+            width: 615px;
+            height: 350px;
+            background-color: #ffffff;
+            z-index: 1;
+            padding: 10px;
+        }
+        .slide10box {
+            float: left;
+            display: inline-block;
+            font-family: sans-serif;
+            font-size: 0.96em;
+            color: #414141;
+        }
+        .name {
+            float: left;
+            line-height: 30px;
+            width: 170px;
+            padding-left: 5px;
+        }
+        .inputname {
+            float: left;
+            line-height: 30px;
+        }
+        .formsetup {
+            float: left;
+            margin-top: 10px;
+            background-color: #dddddd;
+            width: 600px;
+            padding: 12px 5px;
+            font-size: 0.8em;
+            font-weight: 600;
+            color: #616161;
+            box-shadow:0px 2px #c2c1c1 inset;
+        }
+        .form {
+            float: left;
+            line-height: 30px;
+            width: 170px;
+            /*background-color: #dddddd;*/
+            padding-left: 5px;
+            margin-top: 10px;
+        }
+        .inputform {
+            float: left;
+            line-height: 30px;
+            margin-top: 10px;
+        }
+        .inputbutton {
+            float: left;
+            line-height: 30px;
+            margin-top: 10px;
+            margin-left: 2px;
+        }
+        select , input {
+            border: 2px solid #D2D2D6;
+            width: 220px;
+        }
+        select { width: 230px; }
+        button {
+            font-size: 0.8em;
+            padding: 2px 4px;
+            border-radius: 4px;
+            border: 1.5px solid #b8b8b8;
+            color: #505050;
+        }
+        .btq {
+            margin-left: 5px;
+            font-size: 0.9em;
+            font-weight: 900;
+            padding: 0px 3px;
+            border-radius: 3px;
+            border: 1.5px solid #8d744c;
+            background-color: #efd7a9;
+            color: #8d744c;
+        }
     </style>
 </head>
 <body>
@@ -62,12 +154,27 @@
         <p>1.3 selector มีกี่แบบอะไรบ้าง</p>
         <div class="Ans">
             <table>
-                <tr><th>selector มี 5 แบบ</th></tr>
-                <tr><td>1. Simple selectors (ใช้ selector ตามชื่อelements , ชื่อid หรือชื่อclass)</td></tr>
-                <tr><td>2. Combinator selectors (ใช้ selector ตามความสัมพันธ์แต่ละแบบของ elements)</td></tr>
-                <tr><td>3. Pseudo-class selectors (select elements based on a certain state)</td></tr>
-                <tr><td>4. Pseudo-elements selectors (select and style a part of an element)</td></tr>
-                <tr><td>5. Attribute selectors (select elements based on an attribute or attribute value)</li</td></tr>
+                <tr><th colspan="2">selector มี 5 แบบ</th></tr>
+                <tr>
+                    <td>1. <a href="https://www.w3schools.com/css/css_selectors.asp" target="_blank">Simple selectors</a></td>
+                    <td>(ใช้ selector ตามชื่อelements , ชื่อid หรือชื่อclass)</td>
+                </tr>
+                <tr>
+                    <td>2. <a href="https://www.w3schools.com/css/css_combinators.asp" target="_blank">Combinator selectors</a></td>
+                    <td>(ใช้ selector ตามความสัมพันธ์ของแต่ละ elements)</td>
+                </tr>
+                <tr>
+                    <td>3. <a href="https://www.w3schools.com/css/css_pseudo_classes.asp" target="_blank">Pseudo-class selectors</a></td>
+                    <td>(ใช้ selector ตามสถานะของแต่ละ elements)</td>
+                </tr>
+                <tr>
+                    <td>4. <a href="https://www.w3schools.com/css/css_pseudo_elements.asp" target="_blank">Pseudo-elements selectors</a></td>
+                    <td>(ใช้ selector เพื่อกำหนดส่วนต่างๆของ elements)</td>
+                </tr>
+                <tr>
+                    <td>5. <a href="https://www.w3schools.com/css/css_attribute_selectors.asp" target="_blank">Attribute selectors</a></td>
+                    <td>(ใช้ selector เลือกเฉพาะที่มี attributes ที่ระบุ)</td>
+                </tr>
             </table>
         </div><br>
         <p>1.4 combinator มีกี่แบบอะไรบ้าง</p>
@@ -84,20 +191,122 @@
         <h3>2. Slide 7 (review CSS)</h3>
         <p>2.1 property และ value คืออะไรแตกต่างกันอย่างไร</p>
         <div class="Ans">
-            <p>*****</p>
+            <p>property คือชื่อของคุณสมบัติใน CSS </p>
+            <p>value คือลักษณะต่างๆ ของคุณสมบัติใน CSS  </p>
         </div><br>
         <p>2.2 property ที่สอนใน precamp มีกี่กลุ่มอะไรบ้าง</p>
         <div class="Ans">
-            <p>*****</p>
+            <table>
+                <tr><th colspan="2">poperty in CSS</th></tr>
+                <tr>
+                    <td>1. Property for content:</td>
+                    <td>color , size , font , text , list-style-type , Width , background</td>
+                </tr>
+                <tr>
+                    <td>2. Property for border:</td>
+                    <td>border , table</td>
+                </tr>
+                <tr>
+                    <td>3. Property for padding:</td>
+                    <td>padding (top right bottom left)</td>
+                </tr>
+                <tr>
+                    <td>4. Property for margin:</td>
+                    <td>margin (top right bottom left)</td>
+                </tr>
+                <tr>
+                    <td>5. Property for element:</td>
+                    <td>display , Height , Width , Position , Float , Align , Flex , Grid</td>
+                </tr>
+            </table>
         </div><br>
-        <p>2.3 value unit มีกี่ประเภทอะไรบ้างแต่ละ ประเภทคืออะไร</p>
+        <p>2.3 value unit มีกี่ประเภทอะไรบ้าง แต่ละประเภทคืออะไร</p>
         <div class="Ans">
-            <p>*****</p>
+            <p>value unit มี 2 ประเภท มี Absolute lengths และ Relative lengths</p><br>
+            <div style="display: inline-block">
+                <table style="float: left;">
+                    <tr><th colspan="2">Absolute lengths</th></tr>
+                    <tr><td>cm</td><td>เซ็นติเมตร</td></tr>
+                    <tr><td>mm</td><td>มิลลิเมตร</td></tr>
+                    <tr><td>in</td><td>นิ้ว</td></tr>
+                    <tr><td>px</td><td>พิกเซล 1/96 นิ้ว</td></tr>
+                    <tr><td>pt</td><td>พอยท์ 1/72 นิ้ว</td></tr>
+                    <tr><td>pc</td><td>พิคาล 1/12 นิ้ว</td></tr>
+                </table>
+                <p style="float: left; width: 50px"></p>
+                <table style="float: left;">
+                    <tr><th colspan="2">Relative lengths</th></tr>
+                    <tr><td>em</td><td>เท่าขนาดฟอนท์ของ element</td></tr>
+                    <tr><td>ex</td><td>เท่าความสูงของฟอนท์ของ element</td></tr>
+                    <tr><td>ch</td><td>ความกว้างของตัวหนังสือใน parent element</td></tr>
+                    <tr><td>rem</td><td>เท่าขนาดฟอนท์ของroot element</td></tr>
+                    <tr><td>vh</td><td>เปอร์เซ็นต่์ความสูงหน้าจอ</td></tr>
+                    <tr><td>vw</td><td>เปอร์เซ็นต์ความกว้างหน้าจอ</td></tr>
+                    <tr><td>vmin</td><td>เปอร์เซนต์ของ view point ต่ำสุด</td></tr>
+                    <tr><td>vmax</td><td>เปอร์เซนต์ของ view point สูงสุด</td></tr>
+                    <tr><td>%</td><td>เปอร์เซนต์ของ parent element</td></tr>
+                </table>
+            </div>
         </div><br><br>
 <!-- 3. slide 10 -->
         <h3>3. slide 10 ให้สร้างตารางตามรูปด้านล่าง</h3>
         <div class="Ans">
-            <p>*****</p>
+            <div class="slide10"></div>
+            <div class="slide10ontop">
+                <div class="slide10box">
+                    <div class="name">
+                        Name <span style="color: red">*</span>: <br>
+                        Tab Text <span style="color: red">*</span>: <br>
+                        URL <span style="color: red">*</span>:
+                    </div>
+                    <div class="inputname">
+                        <input type="text"><button class="btq">?</button><br>
+                        <input type="text"><button class="btq">?</button><br>
+                        http://www.wizehive.com/webform/
+                        <input type="text" style="width: 100px;
+                        margin-left: -5px">
+                    </div><br>
+                </div><br>
+                <div class="slide10box">
+                    <div class="formsetup">FORM SETUP</div>
+                </div><br>
+                <div class="slide10box">
+                    <div class="form">
+                        Form : <br>
+                        Logo : <br>
+                        Tmplate Text : <br>
+                        Review Form : <br>
+                        Review Score : <br>
+                        Scoring Type : <br>
+                        Max Score :
+                    </div>
+                    <div class="inputform">
+                        <select name="name"></select><br>
+                        no logo uploaded<br>
+                        <select name="text">
+                            <option value="English">English</option>
+                        </select><br>
+                        <select name="text">
+                            <option value="Default">Default</option>
+                        </select><br>
+                        <select name="text">
+                            <option value="Rating">Rating</option>
+                        </select><br>
+                        <select name="text" style="width: 80px">
+                            <option value="Average">Average</option>
+                        </select><br>
+                        <input type="text" value="4.00">
+                    </div>
+                    <div class="inputbutton">
+                        <button>Edit</button><br>
+                        <button>Upload Logo</button><br>
+                        <button>Edit</button><br>
+                        <br>
+                        <button>Reload Fields</button><br>
+                    </div>
+                </div>
+            </div>
+            <div style="height: 420px"></div>
         </div><br><br>
 <!-- 4. slide 15 -->
         <h3>4. slide 15 (review CSS)</h3>
@@ -125,7 +334,7 @@
         <h3>5. slide 17 ให้ทำตามหน้าเว็นนี้</h3>
         <div class="Ans">
             <p><a href="https://www.nike.com/th/men?cp=62130418954_search_%7Cth%7CCore%2BBrand%2B-%2BGN%2B-%2BPure%2B-%2BXCategory%2B-%2BNike%2BThailand%2B-%2BTM%2B-%2BGeneral%2B-%2BMens%2BLP%2B-%2BEN_TH%2B-%2BExact%7CGOOGLE%7Cnike&gclid=EAIaIQobChMIj73I0p6-5wIVzBErCh1nGgUNEAAYASAAEgKYlPD_BwE&gclsrc=aw.ds">www.nike.com</a></p>
-            <p><a href="./slide17.html">my nike</a></p>
+            <p><a href="./slide17.html" target="_blank">my nike</a></p>
         </div><br><br>
 <!-- 6. slide 34 -->
         <h3>6. slide 34 media query ให้ทำตาม โจทย์</h3>
@@ -136,13 +345,13 @@
             <p>6.2.2 ให้แบ่งหน้าจอ เป็น 1, 2 หรือ 3 คอลัมน์ โดยแต่ละคอลัมน์ต้องมีหัวข้อและมีเนื้อหา</p>
             <p>6.3.3 มีข้อความ ที่เป็นหัวข้อและเนื้อหาอยู่ตรงกลางจอ</p>
         </div><br>
-        <p><a href="./slide34.html">media query</a></p>
+        <p><a href="./slide34.html" target="_blank">media query</a></p>
         <br><br>
 <!-- 7. slide 35 -->
         <h3>7. slide 35 ให้ทำหน้า responsive page ตามตัวอย่างเว็บนี้</h3>
         <div class="Ans">
             <p><a href="https://www.pimclick.com/contact-digital-agency-bangkok/">www.pimclick.com</a></p>
-            <p><a href="./slide35.html">my pimclick</a></p>
+            <p><a href="./slide35" target="_blank">my pimclick</a></p>
         </div><br><br>
 <!-- 8. slide 48 -->
         <h3>8. slide 48 animation CSS </h3>
@@ -201,6 +410,12 @@
             <p>10.2 ให้ทำ animation show, hide</p>
             <p>10.3 ให้ทำ animation เคลื่อนที่</p>
         </div><br><br>
+<!--&lt;!&ndash; 11. slide 35 &ndash;&gt;-->
+<!--        <h3>7. slide 35 ให้ทำหน้า responsive page ตามตัวอย่างเว็บนี้</h3>-->
+<!--        <div class="Ans">-->
+<!--            <p><a href="https://www.pimclick.com/contact-digital-agency-bangkok/">www.pimclick.com</a></p>-->
+<!--            <p><a href="./slide35_new_normal.html" target="_blank">my pimclick</a></p>-->
+<!--        </div><br><br>-->
     </div>
 </body>
 </html>
