@@ -312,11 +312,122 @@
         <h3>4. slide 15 (review CSS)</h3>
         <p>4.1 value ใน display property มีอะไรบ้าง</p>
         <div class="Ans">
-            <p>*****</p>
+            <table>
+                <tr><th>Value</th><th>Description</th></tr>
+                <tr>
+                    <td>inline</td>
+                    <td>Displays an element as an inline element (like &#60;span&#62;). Any height and width properties will have no effect</td>
+                </tr>
+                <tr>
+                    <td>block</td>
+                    <td>Displays an element as a block element (like &#60;p&#62;). It starts on a new line, and takes up the whole width</td>
+                </tr>
+                <tr>
+                    <td>contents</td>
+                    <td>Makes the container disappear, making the child elements children of the element the next level up in the DOM</td>
+                </tr>
+                <tr>
+                    <td>flex</td>
+                    <td>Displays an element as a block-level flex container</td>
+                </tr>
+                <tr>
+                    <td>grid</td>
+                    <td>Displays an element as a block-level grid container</td>
+                </tr>
+                <tr>
+                    <td>inline-block</td>
+                    <td>Displays an element as an inline-level block container. The element itself is formatted as an inline element, but you can apply height and width values</td>
+                </tr>
+                <tr>
+                    <td>inline-flex</td>
+                    <td>Displays an element as an inline-level flex container</td>
+                </tr>
+                <tr>
+                    <td>inline-grid</td>
+                    <td>Displays an element as an inline-level grid container</td>
+                </tr>
+                <tr>
+                    <td>inline-table</td>
+                    <td>The element is displayed as an inline-level table</td>
+                </tr>
+                <tr>
+                    <td>list-item</td>
+                    <td>Let the element behave like a &#60;li&#62; element</td>
+                </tr>
+                <tr>
+                    <td>run-in</td>
+                    <td>Displays an element as either block or inline, depending on context </td>
+                </tr>
+                <tr>
+                    <td>table</td>
+                    <td>Let the element behave like a &#60;table&#62; element</td>
+                </tr>
+                <tr>
+                    <td>table-caption</td>
+                    <td>Let the element behave like a &#60;caption&#62; element</td>
+                </tr>
+                <tr>
+                    <td>table-column-group</td>
+                    <td>Let the element behave like a &#60;colgroup&#62; element</td>
+                </tr>
+                <tr>
+                    <td>table-header-group</td>
+                    <td>Let the element behave like a &#60;thead&#62; element</td>
+                </tr>
+                <tr>
+                    <td>table-footer-group</td>
+                    <td>Let the element behave like a &#60;tfoot&#62; element</td>
+                </tr>
+                <tr>
+                    <td>table-row-group</td>
+                    <td>Let the element behave like a &#60;tbody&#62; element</td>
+                </tr>
+                <tr>
+                    <td>table-cell</td>
+                    <td>Let the element behave like a &#60;td&#62; element</td>
+                </tr>
+                <tr>
+                    <td>table-column</td>
+                    <td>Let the element behave like a &#60;col&#62; element</td>
+                </tr>
+                <tr>
+                    <td>table-row</td>
+                    <td>Let the element behave like a &#60;tr&#62; element</td>
+                </tr>
+                <tr>
+                    <td>none</td>
+                    <td>The element is completely removed</td>
+                </tr>
+                <tr>
+                    <td>initial</td>
+                    <td>Sets this property to its default value. Read about initial</td>
+                </tr>
+                <tr>
+                    <td>inherit</td>
+                    <td> Inherits this property from its parent element. Read about inherit</td>
+                </tr>
+            </table>
         </div><br>
         <p>4.2 grid และ flex แตกต่างกันอย่างไร</p>
         <div class="Ans">
-            <p>*****</p>
+            <table>
+                <tr><th>No.</th><th>flex layout</th><th>grid layout</th></tr>
+                <tr>
+                    <td>1.</td>
+                    <td>มีการกำหนดทิศทาง ของข้อมูลภายในคอนเทนเนอร์ ไปในทิศทางเดียวกัน เช่นแนวนอน(row) หรือแนวตั้ง(column)</td>
+                    <td>สามารถกำหนดทิศทาง ของข้อมูลภายในคอนเทนเนอร์ ไปได้พร้อมกันทั้ง แนวนอน(row) และแนวตั้ง(column)</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>ให้ความสำคัญกับการจัดเนื้อหาในคอนเทนเนอร์ เป็นลำดับแรก</td>
+                    <td>ให้ความสำคัญกับการจัดแบ่งพื้นที่ ที่ชัดเจนของคอนเทนเนอร์ เป็นลำดับแรก</td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>flex เหมาะสมกับโครงสร้างเว็บ ที่ส่วนใหญ่เป็นแบบเส้นตรง(แนวนอนหรือแนวตั้ง) หรือโครงสร้างขนาดเล็ก</td>
+                    <td>ในขณะที่grid เหมาะสมกับโครงสร้างเว็บขนาดใหญ่ ที่มีการกำหนดโครงสร้างทั้งแนวตั้ง , แนวนอน หรือทับซ้อนกัน</td>
+                </tr>
+            </table>
         </div><br>
         <p>4.3 justify and align แตกต่างกันอย่างไร</p>
         <div class="Ans">
