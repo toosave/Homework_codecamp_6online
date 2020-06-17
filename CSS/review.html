@@ -197,25 +197,25 @@
         <p>2.2 property ที่สอนใน precamp มีกี่กลุ่มอะไรบ้าง</p>
         <div class="Ans">
             <table>
-                <tr><th colspan="2">poperty in CSS</th></tr>
+                <tr><th colspan="2">Property in CSS</th></tr>
                 <tr>
-                    <td>1. Property for content:</td>
+                    <td>1. Property for content</td>
                     <td>color , size , font , text , list-style-type , Width , background</td>
                 </tr>
                 <tr>
-                    <td>2. Property for border:</td>
+                    <td>2. Property for border</td>
                     <td>border , table</td>
                 </tr>
                 <tr>
-                    <td>3. Property for padding:</td>
+                    <td>3. Property for padding</td>
                     <td>padding (top right bottom left)</td>
                 </tr>
                 <tr>
-                    <td>4. Property for margin:</td>
+                    <td>4. Property for margin</td>
                     <td>margin (top right bottom left)</td>
                 </tr>
                 <tr>
-                    <td>5. Property for element:</td>
+                    <td>5. Property for element</td>
                     <td>display , Height , Width , Position , Float , Align , Flex , Grid</td>
                 </tr>
             </table>
@@ -431,20 +431,48 @@
         </div><br>
         <p>4.3 justify and align แตกต่างกันอย่างไร</p>
         <div class="Ans">
-            <p>*****</p>
+            <table>
+                <tr><td>align</td><td>เป็นการจัดคอนเทนเนอร์ ตามแกน column เช่นให้ชิดด้านบน กลาง หรือล่าง</td></tr>
+                <tr><td>justify</td><td>เป็นการจัดคอนเทนเนอร์ ตามแกน row เช่นให้ชิดด้านซ้าย กลาง หรือขวา</td></tr>
+            </table>
         </div><br>
         <p>5.1 position คืออะไร และ อะไรบ้าง</p>
         <div class="Ans">
-            <p>*****</p>
+            <table>
+                <tr><th>Value</th><th>What is the Position</th></tr>
+                <tr>
+                    <td>static</td>
+                    <td>static เป็นค่าเริ่มต้นของทุก element จะแสดงตำแหน่งที่คงที่ ตามลำดับในเอกสาร การใช้คำสั่ง top หรือleft จะไม่มีผล</td>
+                </tr>
+                <tr>
+                    <td>relative</td>
+                    <td>element อยู่ในตำแหน่งที่อ้างอิงกับตำแหน่งของ element หลัก การใช้คำสั่งเช่น left: 20px element จะห่างจากตำแหน่งซ้ายของ element หลัก 20พิกเซล</td>
+                </tr>
+                <tr>
+                    <td>fixed</td>
+                    <td>element อยู่ในตำแหน่งที่อ้างอิงกกับหน้าต่างเบราว์เซอร์ การใช้คำสั่งเช่น left: 20px element จะห่างจากตำแหน่งซ้ายของหน้าต่างเบราว์เซอร์ 20พิกเซล</td>
+                </tr>
+                <tr>
+                    <td>absolute</td>
+                    <td>element อยู่ในตำแหน่งที่อ้างอิงกับตำแหน่งของ element หลักลำดับแรกสุด การใช้คำสั่งเช่น left: 20px element จะห่างจากตำแหน่งซ้ายของ element หลักลำดับแรกสุด 20พิกเซล</td>
+                </tr>
+                <tr>
+                    <td>sticky</td>
+                    <td>การรวม relative กับ fix ไว้ด้วยกัน โดยการกำหนด relative เพิ่มว่าจะให้ไป fix ที่ top หรือ bottom ทำให้เราเห็น block นั้นเลื่อน และถูกตรึงไว้เมื่อเราเลื่อน scroll เมาส์</td>
+                </tr>
+            </table>
         </div><br>
         <p>5.2 z-index คืออะไรใช้อย่างไร</p>
         <div class="Ans">
-            <p>*****</p>
+            <table>
+                <tr><th>Value</th><th>What is the z-index</th></tr>
+                <tr><td>z-index</td><td>เป็นการจัดการ element ในรูปแบบชั้น layer บนหน้าจอ โดยค่าน้อยจะอยู่ด้านหลัง ค่ามากจะอยู่ด้านหน้า ค่าเริ่มต้นของทุก elemnet คือ z-index = 0</td></tr>
+            </table>
         </div><br>
 <!-- 5. slide 17 -->
         <h3>5. slide 17 ให้ทำตามหน้าเว็นนี้</h3>
         <div class="Ans">
-            <p><a href="https://www.nike.com/th/men?cp=62130418954_search_%7Cth%7CCore%2BBrand%2B-%2BGN%2B-%2BPure%2B-%2BXCategory%2B-%2BNike%2BThailand%2B-%2BTM%2B-%2BGeneral%2B-%2BMens%2BLP%2B-%2BEN_TH%2B-%2BExact%7CGOOGLE%7Cnike&gclid=EAIaIQobChMIj73I0p6-5wIVzBErCh1nGgUNEAAYASAAEgKYlPD_BwE&gclsrc=aw.ds">www.nike.com</a></p>
+            <p><a href="https://www.nike.com/th/men?cp=62130418954_search_%7Cth%7CCore%2BBrand%2B-%2BGN%2B-%2BPure%2B-%2BXCategory%2B-%2BNike%2BThailand%2B-%2BTM%2B-%2BGeneral%2B-%2BMens%2BLP%2B-%2BEN_TH%2B-%2BExact%7CGOOGLE%7Cnike&gclid=EAIaIQobChMIj73I0p6-5wIVzBErCh1nGgUNEAAYASAAEgKYlPD_BwE&gclsrc=aw.ds" target="_blank">www.nike.com</a></p>
             <p><a href="./slide17.html" target="_blank">my nike</a></p>
         </div><br><br>
 <!-- 6. slide 34 -->
@@ -461,7 +489,7 @@
 <!-- 7. slide 35 -->
         <h3>7. slide 35 ให้ทำหน้า responsive page ตามตัวอย่างเว็บนี้</h3>
         <div class="Ans">
-            <p><a href="https://www.pimclick.com/contact-digital-agency-bangkok/">www.pimclick.com</a></p>
+            <p><a href="https://www.pimclick.com/contact-digital-agency-bangkok/" target="_blank">www.pimclick.com</a></p>
             <p><a href="./slide35" target="_blank">my pimclick</a></p>
         </div><br><br>
 <!-- 8. slide 48 -->
@@ -521,12 +549,6 @@
             <p>10.2 ให้ทำ animation show, hide</p>
             <p>10.3 ให้ทำ animation เคลื่อนที่</p>
         </div><br><br>
-<!--&lt;!&ndash; 11. slide 35 &ndash;&gt;-->
-<!--        <h3>7. slide 35 ให้ทำหน้า responsive page ตามตัวอย่างเว็บนี้</h3>-->
-<!--        <div class="Ans">-->
-<!--            <p><a href="https://www.pimclick.com/contact-digital-agency-bangkok/">www.pimclick.com</a></p>-->
-<!--            <p><a href="./slide35_new_normal.html" target="_blank">my pimclick</a></p>-->
-<!--        </div><br><br>-->
     </div>
 </body>
 </html>
