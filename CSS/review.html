@@ -19,7 +19,10 @@
             text-align: center;
             padding: 4px 10px;
         }
-        td { padding: 4px 10px; }
+        td {
+            padding: 4px 10px;
+            line-height: 23px;
+        }
         p, span {
             font-size: large;
             text-indent: 20px;
@@ -316,15 +319,16 @@
                 <tr><th>Value</th><th>Description</th></tr>
                 <tr>
                     <td>inline</td>
-                    <td>Displays an element as an inline element (like &#60;span&#62;). Any height and width properties will have no effect</td>
+                    <td>Displays an element as an inline element (like &#60;span&#62;). <br>Any height and width properties will have no effect</td>
                 </tr>
                 <tr>
                     <td>block</td>
-                    <td>Displays an element as a block element (like &#60;p&#62;). It starts on a new line, and takes up the whole width</td>
+                    <td>Displays an element as a block element (like &#60;p&#62;). <br>It starts on a new line, and takes up the whole width</td>
                 </tr>
                 <tr>
                     <td>contents</td>
-                    <td>Makes the container disappear, making the child elements children of the element the next level up in the DOM</td>
+                    <td>Makes the container disappear, making the child elements children of the element <br>
+                        the next level up in the DOM</td>
                 </tr>
                 <tr>
                     <td>flex</td>
@@ -336,7 +340,9 @@
                 </tr>
                 <tr>
                     <td>inline-block</td>
-                    <td>Displays an element as an inline-level block container. The element itself is formatted as an inline element, but you can apply height and width values</td>
+                    <td>Displays an element as an inline-level block container. <br>
+                        The element itself is formatted as an inline element, <br>
+                        but you can apply height and width values</td>
                 </tr>
                 <tr>
                     <td>inline-flex</td>
@@ -414,8 +420,10 @@
                 <tr><th>No.</th><th>flex layout</th><th>grid layout</th></tr>
                 <tr>
                     <td>1.</td>
-                    <td>มีการกำหนดทิศทาง ของข้อมูลภายในคอนเทนเนอร์ ไปในทิศทางเดียวกัน เช่นแนวนอน(row) หรือแนวตั้ง(column)</td>
-                    <td>สามารถกำหนดทิศทาง ของข้อมูลภายในคอนเทนเนอร์ ไปได้พร้อมกันทั้ง แนวนอน(row) และแนวตั้ง(column)</td>
+                    <td>มีการกำหนดทิศทาง ของข้อมูลภายในคอนเทนเนอร์ ไปในทิศทางเดียวกัน <br>
+                        เช่นแนวนอน(row) หรือแนวตั้ง(column)</td>
+                    <td>สามารถกำหนดทิศทาง ของข้อมูลภายในคอนเทนเนอร์ ไปได้พร้อมกันทั้ง <br>
+                        แนวนอน(row) และแนวตั้ง(column)</td>
                 </tr>
                 <tr>
                     <td>2.</td>
@@ -424,8 +432,10 @@
                 </tr>
                 <tr>
                     <td>3.</td>
-                    <td>flex เหมาะสมกับโครงสร้างเว็บ ที่ส่วนใหญ่เป็นแบบเส้นตรง(แนวนอนหรือแนวตั้ง) หรือโครงสร้างขนาดเล็ก</td>
-                    <td>ในขณะที่grid เหมาะสมกับโครงสร้างเว็บขนาดใหญ่ ที่มีการกำหนดโครงสร้างทั้งแนวตั้ง , แนวนอน หรือทับซ้อนกัน</td>
+                    <td>flex เหมาะสมกับโครงสร้างเว็บ ที่ส่วนใหญ่เป็นแบบเส้นตรง <br>
+                        (แนวนอนหรือแนวตั้ง) หรือโครงสร้างขนาดเล็ก</td>
+                    <td>ในขณะที่grid เหมาะสมกับโครงสร้างเว็บขนาดใหญ่ ที่มีการกำหนดโครงสร้าง <br>
+                        ทั้งแนวตั้ง , แนวนอน หรือทับซ้อนกัน</td>
                 </tr>
             </table>
         </div><br>
@@ -442,23 +452,28 @@
                 <tr><th>Value</th><th>What is the Position</th></tr>
                 <tr>
                     <td>static</td>
-                    <td>static เป็นค่าเริ่มต้นของทุก element จะแสดงตำแหน่งที่คงที่ ตามลำดับในเอกสาร การใช้คำสั่ง top หรือleft จะไม่มีผล</td>
+                    <td>static เป็นค่าเริ่มต้นของทุก element จะแสดงตำแหน่งที่คงที่ ตามลำดับในเอกสาร <br>
+                        การใช้คำสั่ง top หรือleft จะไม่มีผล</td>
                 </tr>
                 <tr>
                     <td>relative</td>
-                    <td>element อยู่ในตำแหน่งที่อ้างอิงกับตำแหน่งของ element หลัก การใช้คำสั่งเช่น left: 20px element จะห่างจากตำแหน่งซ้ายของ element หลัก 20พิกเซล</td>
+                    <td>element อยู่ในตำแหน่งที่อ้างอิงกับตำแหน่งของ element หลัก การใช้คำสั่งเช่น left: 20px <br>
+                        ทำให้ element จะห่างจากตำแหน่งซ้ายของ element หลัก 20พิกเซล</td>
                 </tr>
                 <tr>
                     <td>fixed</td>
-                    <td>element อยู่ในตำแหน่งที่อ้างอิงกกับหน้าต่างเบราว์เซอร์ การใช้คำสั่งเช่น left: 20px element จะห่างจากตำแหน่งซ้ายของหน้าต่างเบราว์เซอร์ 20พิกเซล</td>
+                    <td>element อยู่ในตำแหน่งที่อ้างอิงกกับหน้าต่างเบราว์เซอร์ การใช้คำสั่งเช่น left: 20px <br>
+                        ทำให้ element จะห่างจากตำแหน่งซ้ายของหน้าต่างเบราว์เซอร์ 20พิกเซล</td>
                 </tr>
                 <tr>
                     <td>absolute</td>
-                    <td>element อยู่ในตำแหน่งที่อ้างอิงกับตำแหน่งของ element หลักลำดับแรกสุด การใช้คำสั่งเช่น left: 20px element จะห่างจากตำแหน่งซ้ายของ element หลักลำดับแรกสุด 20พิกเซล</td>
+                    <td>element อยู่ในตำแหน่งที่อ้างอิงกับตำแหน่งของ element หลักลำดับแรกสุด การใช้คำสั่งเช่น left: 20px<br>
+                        ทำให้ element จะห่างจากตำแหน่งซ้ายของ element หลักลำดับแรกสุด 20พิกเซล</td>
                 </tr>
                 <tr>
                     <td>sticky</td>
-                    <td>การรวม relative กับ fix ไว้ด้วยกัน โดยการกำหนด relative เพิ่มว่าจะให้ไป fix ที่ top หรือ bottom ทำให้เราเห็น block นั้นเลื่อน และถูกตรึงไว้เมื่อเราเลื่อน scroll เมาส์</td>
+                    <td>การรวม relative กับ fix ไว้ด้วยกัน โดยการกำหนด relative เพิ่มว่าจะให้ไป fix ที่ top หรือ bottom<br>
+                        ทำให้เราเห็น block นั้นเลื่อน และถูกตรึงไว้เมื่อเราเลื่อน scroll เมาส์</td>
                 </tr>
             </table>
         </div><br>
@@ -466,7 +481,7 @@
         <div class="Ans">
             <table>
                 <tr><th>Value</th><th>What is the z-index</th></tr>
-                <tr><td>z-index</td><td>เป็นการจัดการ element ในรูปแบบชั้น layer บนหน้าจอ โดยค่าน้อยจะอยู่ด้านหลัง ค่ามากจะอยู่ด้านหน้า ค่าเริ่มต้นของทุก elemnet คือ z-index = 0</td></tr>
+                <tr><td>z-index</td><td>เป็นการจัดการ element ในรูปแบบชั้น layer บนหน้าจอ โดยค่าน้อยจะอยู่ด้านหลัง ค่ามากจะอยู่ด้านหน้า <br>ค่าเริ่มต้นของทุก elemnet คือ z-index = 0</td></tr>
             </table>
         </div><br>
 <!-- 5. slide 17 -->
