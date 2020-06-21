@@ -1,9 +1,188 @@
-/*font-family: Helvetica Neue W31;*/
-/*font-family: FreeSerif;*/
-/*font-family: Futura;*/
 body {
     margin: 0px;
     padding: 0px;
     background-color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+            "header"
+            "menubar"
+            "covid19"
+            "navbar1"
+            "nike1_big"
+            "navbar2"
+            "nike2_small"
+            "navbar3"
+            "nike3_big"
+            "navbar4"
+            "nike4_big"
+            "navbar5"
+            "navbar6"
+            "nike6_small"
+            "footer";
+}
+.header {
+    display: grid;
+    grid-template-areas: "header";
+    height: 40px;
+    border: 0.5px solid #e3e2e2;
+    border-width: 0px 0px 0.5px 0px;
+}
+.header-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex: 2;
+    justify-content: space-between;
+}
+.header-left {
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    flex: 2;
+    justify-content: left;
+}
+.header-left button {
+    border: none;
+    font-family: 'Mitr', sans-serif;
+    background-color: #ffffff;
+    color: #6d6d71;
+    font-size: 12px;
+    padding: 12px 25px 10px 28px;
+    border: 0.5px solid #e3e2e2;
+    border-width: 0px 0.5px 0px 0px;
+    cursor: pointer;
+}
+.header-left span {
+    padding: 10px 20px 10px 20px;
+    border: 0.5px solid #e3e2e2;
+    border-width: 0px 0.5px 0px 0px;
+    cursor: pointer;
+}
+.header-left img {
+    height: 23px;
 }
 
+.header-right {
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    flex: 4;
+    justify-content: right;
+}
+.header-right button {
+    border: none;
+    font-family: 'Mitr', sans-serif;
+    /*background-color: #ffffff;*/
+    background-color: #7fa0f3;
+    color: #6d6d71;
+    font-size: 12px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.header-right img {
+    height: 15px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.menubar {
+    display: grid;
+    grid-template-areas: "menubar";
+    height: 70px;
+    border: 0.5px solid #e3e2e2;
+    border-width: 0px 0px 0.5px 0px;
+}
+.covid19 {
+    display: grid;
+    grid-template-areas: "covid19";
+    height: 57px;
+    border: 0.5px solid #e3e2e2;
+    border-width: 0px 0px 0.5px 0px;
+    background-color: #f5f5f5;
+    font-family: 'Mitr', sans-serif;
+    font-size: 13px;
+    font-weight: 200;
+    align-items: center;
+    text-align: center;
+}
+.navbar1 {
+    display: grid;
+    grid-template-areas: "navbar1";
+    width: 54vw;
+    height: 100px;
+    margin-left: 59px;
+    font-family: 'Mitr', sans-serif;
+    font-weight: 200;
+}
+.navbar1-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex: 2;
+}
+.navbar1-active {
+    display: flex;
+    font-size: 24px;
+    font-weight: 400;
+}
+.navbar1-menu {
+    display: flex;
+}
+.navbar1-menu span {
+    margin-right: 27px;
+    font-size: 17px;
+}
+.nike1_big {
+
+}
+.navbar2 {
+
+}
+.nike2_small {
+
+}
+.navbar3 {
+
+}
+.nike3_big {
+
+}
+.navbar4 {
+
+}
+.nike4_big {
+
+}
+.navbar5 {
+
+}
+.navbar6 {
+
+}
+.nike6_small {
+
+}
+.footer {
+
+}
+@media only screen and (max-width: 1000px){
+    .header { display: none }
+    .menubar {
+        height: 47px;
+    }
+    .navbar1 {
+        height: 140px;
+        margin-left: 20px;
+    }
+    .navbar1-wrapper {
+        padding-top: 40px;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        flex: 2;
+    }
+    .navbar1-menu {
+        line-height: 55px;
+    }
+}
