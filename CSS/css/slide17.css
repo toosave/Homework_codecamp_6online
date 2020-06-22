@@ -52,7 +52,11 @@ body {
     border-width: 0px 0.5px 0px 0px;
     cursor: pointer;
 }
+
 .header-left span {
+    height: 20px;
+    top: 0px;
+    left: 120px;
     padding: 10px 20px 10px 20px;
     border: 0.5px solid #e3e2e2;
     border-width: 0px 0.5px 0px 0px;
@@ -61,7 +65,16 @@ body {
 .header-left img {
     height: 23px;
 }
-
+.jordan1 {
+    position: absolute;
+    z-index: 2;
+}
+.jordan1:hover { z-index: 1 }
+.jordan2 {
+    position: absolute;
+    z-index: 1
+}
+.jordan2:hover { z-index: 2 }
 .header-right {
     display: flex;
     flex-direction: row;
@@ -73,15 +86,15 @@ body {
     border: none;
     font-family: 'Mitr', sans-serif;
     /*background-color: #ffffff;*/
-    background-color: #7fa0f3;
+    background-color: rgba(255, 255, 255, 0);
     color: #6d6d71;
-    font-size: 12px;
+    font-size: 14px;
     padding: 5px 10px;
     cursor: pointer;
 }
 .header-right img {
     height: 15px;
-    padding: 5px 10px;
+    padding: 7px;
     cursor: pointer;
 }
 
